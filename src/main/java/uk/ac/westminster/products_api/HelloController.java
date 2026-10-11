@@ -33,4 +33,9 @@ public class HelloController {
         return "Goodbye from Spring Boot!";
     }
 
+    @GetMapping("/getstatus")
+    public String getStatus() {
+        return "Application is up and running. Today's date is: " + LocalDate.now().toString();
+    }
+
 }
